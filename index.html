@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Off-canvas-popup</title>
+</head>
+
+<body>
+    <div class="start-container">
+        <button class="start" id="startMigration">Start Migration</button>
+    </div>
+    <div id="popupContainer" class="popup-container">
+        <div class="launch-icon">
+            <i class="material-icons" style="font-size:95px;"> rocket_launch</i>
+        </div>
+        <div class="progress-bar-container">
+            <div class="progress-text">
+
+                <p>Migrating Data to selected environment</p>
+                <p id="progress-text"> 0%</p>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="toggle-button" id="toggleButton">
+        <i name="success" class="material-icons" style="font-size:20px;">keyboard_arrow_down</i>
+    </div>
+    <div id="alertContainer" class="alert-box">
+        <div>
+            <i name="success" class="material-icons icon-open" style="font-size:48px;">done</i>
+        </div>
+        <div>
+            <h3>Success</h3>
+            <p>Migration applied successfully.</p>
+        </div>
+        <div>
+            <i id="success" class="material-icons icon-close" style="font-size:48px;">close</i>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
